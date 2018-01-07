@@ -1,0 +1,44 @@
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+body { background: #6699FF; }
+/*@keyframes 规则控制以”时间轴”为控制手段的动画机制*/
+ @keyframes mysnow { 0% { bottom: 100%; opacity: 0; } 50% { opacity: 1; transform: rotate(720deg);} 100% { transform: rotate(0deg); opacity: 0; bottom: 0%;} }
+  .container { position: fixed; }
+   .pic { position: absolute; opacity: 0; animation: mysnow 5s;height: 30px; } 
+#a{
+  	margin: 30px 56px 0px 56px 0px;
+    width: 90%;
+ 	display: block;
+    float: right;
+    position:absolute;
+	height:448px;
+	background-color: #CCFFCC;
+	margin 152px;
+	position:absolute;
+	top:101px;
+	left:71px;
+	 background-color:#FFFFFF;
+    background: -moz-linear-gradient(#FFFFFF, #6699FF);
+    background: -ms-linear-gradient(#FFFFFF, #6699FF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%,#6699FF));
+    background: -webkit-linear-gradient(#FFFFFF, #F5FFFA);
+    background: -o-linear-gradient(#FFFFFF, #F5FFFA);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#6699FF');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#6699FF')";
+    background: linear-gradient(#FFFFFF,#6699FF);
+
+    border-bottom: 2px solid  #CCFFCC;
+    border-top: 2px solid #F5FFFA;
+}
+#b{
+float:left;
+}
+#c{
+font-family: 'Lucida Console';
+text-indent: 2em;
+
+}
+

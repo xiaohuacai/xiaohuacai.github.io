@@ -1,0 +1,72 @@
+/* CSS Document */
+.container {
+    margin: 30px auto;
+    width: 90%;
+	position:absolute;
+}
+
+.menu {
+    height: 40px;
+}
+.menu li {
+   
+	
+	 background-color:#FFFFFF;
+    background: -moz-linear-gradient(#FFFFFF, #6699FF);
+    background: -ms-linear-gradient(#FFFFFF, #6699FF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%,#6699FF));
+    background: -webkit-linear-gradient(#FFFFFF, #F5FFFA);
+    background: -o-linear-gradient(#FFFFFF, #F5FFFA);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#6699FF');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#6699FF')";
+    background: linear-gradient(#FFFFFF,#6699FF);
+}
+/*子选择器*/
+.menu > li {
+    display: block;/*将<li>元素显示为块级元素*/
+    float: left;
+    position: relative;
+}
+/*伪类选择器*/
+.menu > li:first-child {/*选择属于其父元素<ul>的首个子元素的每个<li> 元素，并为其设置样式*/
+    border-radius: 5px 0 0 0;/*左上圆角边框*/
+}
+.menu a {
+    border-left: 3px solid rgba(0, 0, 0, 0);/*rgba透明色*/
+    color: 	#227700;
+    display: block;
+    font-family: 'Lucida Console';/*Lucida Console是等宽字体。字体间距微紧凑，字体圆滑，略“扁”*/
+    font-size: 18px;
+    line-height: 54px;
+    padding: 0 25px;/*上内边距和下内边距是 0px,右内边距和左内边距是 25px*/
+    text-decoration: none;
+    text-transform: uppercase;/*uppercase定义仅有大写字母*/
+}
+
+/* onhover styles */
+.menu li:hover {
+   
+	
+	background: -moz-linear-gradient(#FFFFFF, 	#6699FF);/*线性渐变*/
+    background: -ms-linear-gradient(#FFFFFF, 	#6699FF);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%,#6699FF));
+    background: -webkit-linear-gradient(#FFFFFF, 	#F5FFFA);
+    background: -o-linear-gradient(#FFFFFF, 	#F5FFFA);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true'startColorstr='#FFF0F0F0', endColorstr='#FF6666FF');/*滤镜*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled='true'startColorstr='#FFF0F0F0', endColorstr='#FFF0F0F0')";
+    background: linear-gradient(#FFFFFF, #6699FF);
+
+    border-bottom: 2px solid 	#F5FFFA;/*上下边框颜色*/
+    border-top: 2px solid 		#FFFFFF;
+    min-width: 160px;
+
+    border-bottom: 2px solid  #CCFFCC;
+    border-top: 2px solid #F5FFFA;
+}
+.menu li:hover > a {
+    border-radius: 5px 0 0 0;
+    border-left: 3px solid 	#CCFFFF;
+	border-right: 3px solid 	#CCFFFF;
+    color:#CCFFFF;
+}
+
